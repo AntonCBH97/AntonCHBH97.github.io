@@ -1,0 +1,301 @@
+/* Style properties of the index.html page, general */
+
+html, body
+{
+    align-items: center;
+}
+
+html
+{
+    font-size: 16px;
+    background-color: rgb(255, 254, 254);
+    background-image: url(https://th.bing.com/th/id/R.032e8266e8e7bfb4964cf46f48f13cad?rik=61%2bx%2f6vr7QAF6Q&pid=ImgRaw&r=0);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+body
+{
+    width: 80%;
+    margin: 0 auto;
+    min-height: 100vh;
+}
+
+@keyframes fadeIn
+{
+    0%
+    {
+        opacity: 0;
+    }
+    100%
+    {
+        opacity: 1;
+    }
+}
+
+img
+{
+    opacity: 0;
+    animation: fadeIn 1s;
+    animation-fill-mode: forwards;
+}
+
+.TPGCN
+{
+    height: 360px;
+    width: 240px;
+    padding-right: 40px;
+    padding-left: 55px;
+    animation-delay: 0s;
+}
+
+.TPWii
+{
+    height: 360px;
+    width: 240px;
+    padding-right: 40px;
+    animation-delay: 0.5s;
+}
+
+.TPWiiU
+{
+    height: 360px;
+    width: 240px;
+    animation-delay: 1s;
+}
+
+
+/* Style properties for the text elements */
+
+h1, h2, h3
+{
+    font-family: "Oswald", sans-serif;
+}
+
+p, input, li
+{
+    font-family: "Peddana", serif;
+    font-weight: 400;
+    font-size: 18px;
+    font-style: normal;
+}
+
+h1
+{
+    font-size: 2rem;
+    text-align: center;
+    color: black;
+}
+
+h2
+{
+    font-size: 24px;
+    text-align: center;
+}
+
+h2::after
+{
+    content: " ";
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color: rgb(183, 180, 180);
+    margin-top: 6px;
+    margin-bottom: 5px;
+}
+
+h3
+{
+    font-size: 20px;
+}
+
+p, li
+{
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+/* Style properties for the header layout */
+
+nav, article, aside, footer
+{
+    background-color: rgb(219, 214, 214);
+    padding: 1%;
+}
+
+nav
+{
+    height: 50px;
+    background-color: #6c90cb;
+    display: flex;
+    margin-bottom: 10px;
+}
+
+nav ul
+{
+    padding: 0;
+    list-style-type: none;
+    flex: 2;
+    display: flex;
+}
+
+nav li
+{
+    display: inline;
+    font-size: 20px;
+    text-align: center;
+    flex: 1;
+}
+
+nav a
+{
+    display: inline-block;
+    font-size: 22px;
+    text-transform: uppercase;
+    text-decoration:none;
+    color: black;
+}
+
+nav a:hover
+{
+    text-decoration: underline;
+}
+
+nav form
+{
+    flex: none;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding: 0.2em;
+}
+
+/* Style properties for the drop-down menu */
+
+.drop-down
+{
+    position: relative;
+    display: inline-block;
+    padding: 10px;
+    cursor: pointer;
+    top: -8px;
+    left: -25px;
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+}
+
+.external-links
+{
+    display: none;
+    position: absolute;
+    background-color: white;
+    box-shadow: 5px 5px 5px black;
+    min-width: 160px;
+    z-index: 1;
+    padding: 0;
+    margin: 0;
+    left: 48px;
+    list-style-type: none;
+}
+
+.drop-down:hover .external-links
+{
+    display: block;
+}
+
+.external-links li a
+{
+    color: rgb(8, 8, 188);
+    text-decoration: none;
+    display: block;
+    padding: 5px;
+}
+
+.external-links li a:hover
+{
+    opacity: 0.7;
+}
+
+.drop-down > a::after
+{
+    content: " \25BC";
+    font-size: 8px;
+    margin-left: 5px;
+}
+
+/* Drop-down menu Style properties END */
+
+input
+{
+    font-size: 16px;
+    height: 25px;
+}
+
+input[type = "search"]
+{
+    flex: 3;
+}
+
+input[type = "submit"]
+{
+    flex: 1;
+    margin-left: 5px;
+    border: 1px black solid;
+}
+
+/* Style properties for the main page content */
+
+main
+{
+    display: flex;
+}
+
+article
+{
+    flex: 4;
+}
+
+.log-in-txt
+{
+    position: relative;
+    font-size: 20px;
+    top: 20px;
+    font-weight: 600;
+    right: -25px;
+}
+
+.sign-in-btn
+{
+    position: absolute;
+    color: black;
+    cursor: pointer;
+    margin-top: -30px;
+    margin-left: 125px;
+    
+}
+
+aside
+{
+    flex: 1;
+    margin-left: 10px;
+    background-color: rgb(245, 229, 209);
+}
+
+aside a:hover
+{
+    opacity: 0.7;
+}
+
+aside li
+{
+    padding-bottom: 10px;
+}
+
+footer
+{
+    text-align: center;
+    margin-top: 10px;
+    background-color: rgb(150, 159, 167);
+}
