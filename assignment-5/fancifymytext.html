@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Fancify Shamcify</title>
+
+		<!-- Linking JS file to HTML file, useful for calling functions -->
+		<script src = "fancifymytext.js"></script>
+		
+	</head>
+
+	<body>
+		<!-- Header, course and author name -->
+		<h1>Fancify my Text - CSC193 Antonio Carrera</h1>
+
+		<!-- First box, for multi-line amount of text -->
+		 <form>
+			<fieldset>
+			<legend>Text</legend>
+				<textarea id = "user-txt" name = "user-txt" rows = "4" cols = "30"></textarea>
+			</fieldset>
+		 </form>
+
+		 <!-- Second box, containing controls for handling events -->
+		 <form>
+			<fieldset>
+			<legend>Fancify</legend>
+
+				<!-- Rendering the buttons onto the page -->
+				<button type = "button" onclick = "largeText()">Bigger!</button>
+				<button type = "button" onclick = "mooText()">Moo</button>
+
+				<!-- Rendering the radio buttons onto the page -->
+				<input type = "radio" id = "fancy" name = "button-1" value = "HTML" onchange = "fancyText()">
+				<label for = "fancy">FancyShmancy</label><br>
+
+				<input type = "radio" id = "boring" name = "button-2" value = "HTML" onchange = "boringText()">
+				<label for = "boring">BoringBetty</label><br>
+
+			</fieldset>
+		 </form>
+		
+	</body>
+</html>
